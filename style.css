@@ -2,11 +2,162 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid; */
+}
+
+:root {
+    --blue: #0065F2;
+    --heading: #000;
+    --grey: #b9b9b9;
+
+}
+.container {
+    width: 80%;
+    max-width: 1140px;
+    min-width: 100px;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 img {
     width: 100%;
     height: auto;
 }
-button {
+.btn{
+    background-color: #0065F2;
+    display: block;
+    border-radius: 6px;
+}
+h3, h4, h5 {
+    font-weight: 900;
+    color: var(--heading);
+}
+.txt
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px 0 25px 0;
+
+}
+
+.options ul {
+    margin-left: 60px;
+}
+
+.options ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.options ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: .1s linear;
     
+}
+.options ul li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #0065F2;
+}
+.logo-head {
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 14%;
+}
+.logo-head img{
+
+    text-align: center;
+}
+
+.btn-head {
+    margin-left: auto;
+    margin-right: 1.5vw;
+    
+}
+.btn-head button {
+    display: block;
+    color: white;
+    margin-left: auto;
+    padding: 10px 27px;
+    cursor: pointer;
+}
+button[data-action="stop"] {
+    display: none !important;
+}
+.sec-1 {
+    width: 100%;
+    max-width: 100%;
+}
+/* carousel style */
+.banner-txt {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 730px;
+    height: 120px;
+}
+.banner-txt h2 {
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.banner-txt p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    width: 540px;
+    height: 84px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.banner-txt button {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 32px;
+}
+
+
+/* ------------------------------
+section 2
+*/
+.sec-2 {
+    padding: 30px 0;
+}
+.sec-2 p{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--grey);
+    font-weight: 600;
+}
+.sec-2 .brands {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
