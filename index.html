@@ -125,10 +125,10 @@
 
     <section class="sec-7 container mx-auto">
         <div class="tab-btn">
-            <button class="tablinks" onclick="openCity(event, 'monthly')">Monthly</button>
+            <button class="tablinks" onclick="openCity(event, 'monthly')" id="defaultOpen">Monthly</button>
             <button class="tablinks" onclick="openCity(event, 'yearly')">Yearly</button>
         </div>
-        <p class="tab-select"> <span>Monthly </span> <span> Yearly</span> </p>
+        
         <div class="tabs tabcontent" id="monthly">
             <div class="tab">
                 <p class="package">Beginner</p>
@@ -167,7 +167,7 @@
                 <button class="tab-btn">Action</button>
             </div>
         </div>
-        <div id="yearly tabcontent">
+        <div class="tabs tabcontent" id="yearly">
             <div class="tab">
                 <p class="package">Beginner</p>
                 <p class="price"><span>$200 </span> /Year</p>
@@ -270,9 +270,11 @@
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(cityName).style.display = "flex";
           evt.currentTarget.className += " active";
         }
+
+        document.getElementById("defaultOpen").click();
         </script>
 </body>
 </html>

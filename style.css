@@ -310,6 +310,27 @@ section 7
     padding: 32px;
     position: relative;
 }
+.sec-7>.tab-btn {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sec-7>.tab-btn>button {
+    margin-left: 32px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: var(--grey);
+    font-size: 24px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.sec-7>.tab-btn>button:hover {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+.sec-7>.tab-btn>button.active {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    background-color: #FFF;
+}
 .tab-btn button.active {
     background-color: #ccc;
   }
@@ -345,13 +366,7 @@ section 7
     border-radius: 5px;
 
 }
-#monthly {
-    /* display: flex !important; */
-}
-#yearly\ tabcontent {
-    /* display: flex !important;
-    justify-content: space-between; */
-}
+
 /* ------------------------------
 section 8
 */
