@@ -13,7 +13,7 @@
 }
 .container {
     width: 80%;
-    max-width: 1140px;
+    max-width: 1440px;
     min-width: 100px;
 }
 .mx-auto {
@@ -33,7 +33,16 @@ h3, h4, h5 {
     font-weight: 900;
     color: var(--heading);
 }
-.txt
+hr {
+    border-color: #ffffff6b;
+}
+.txt {
+    color: #000;
+}
+.txt::selection {
+    background-color: #000;
+    color: var(--blue)
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -64,8 +73,8 @@ header {
     display: inline-block;
     text-decoration: none;
     color: #000;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     transition: .1s linear;
     
@@ -159,5 +168,286 @@ section 2
 .sec-2 .brands {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.brand-1, .brand-2 {
+    width: 100%;
+    display: flex;
     justify-content: space-around;
+}
+.brand-1 img, .brand-2 img {
+    width: 70px;
+    
+}
+/* ------------------------------
+section 3
+*/
+.sec-3 {
+    padding: 45px 0;
+}
+.sec-3 .text{
+    text-align: center;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 40px;
+}
+.sec-3 .text p{
+    text-align: center;
+    width: 540px;
+    height: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+.sec-3 .text a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: .1s ease-in;
+    font-weight: bold;
+}
+.sec-3 .text a::after {
+    content: '\f054';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+.sec-3 .text a:hover {
+    color: var(--blue);
+}
+.sec-3 .video {
+    width: 1110px;
+    height: 410px;
+    position: relative;
+    padding: 1.5vw;
+    margin-bottom: 40px;
+}
+
+.sec-3 .video iframe,
+.sec-3 .video object,
+.sec-3 .video #overlay,
+.sec-3 .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.sec-3 .caption {
+    width: 540px;
+    height: 40px;
+    text-align: center;
+}
+
+/* ------------------------------
+section 4
+*/
+.sec-4, .sec-5 {
+    display: flex;
+}
+.img-sec {
+    width: 50%;
+}
+.txt-sec {
+    width: 50%;
+    padding: 30px 25px;
+
+}
+.txt-sec h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+.feature {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.feature h5{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.feature-1, .feature-2 {
+    width: 14vw;
+}
+/* ------------------------------
+section 6
+*/
+.sec-6 {
+    text-align: center;
+    padding: 20px 0;
+}
+.sec-6 h3 {
+    font-size: 40px;
+    width: 540px;
+}
+
+/* ------------------------------
+section 7
+*/
+.sec-7 {
+    padding: 20px 0;
+}
+.tab-select {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+
+}
+.tab {
+    width: 350px;
+    height: 528px;
+    border: 2px solid #80808038;
+    padding: 32px;
+    position: relative;
+}
+.tab-btn button.active {
+    background-color: #ccc;
+  }
+.tab .package {
+    text-align: end;
+    font-weight: bold;
+}
+.tab .price {
+    font-weight: 900;
+    font-size: 18px;
+}
+.tab .price span {
+    font-size: 91px;
+    display: inline-block;
+}
+.tab ul {
+    padding-left: 5%;
+}
+.tab .aggrement {
+    padding: 20px 0;
+}
+.tab button {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    bottom: 20px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    background-color: var(--blue);
+    border: 2px var(--blue);
+    color: #FFF;
+    border-radius: 5px;
+
+}
+#monthly {
+    /* display: flex !important; */
+}
+#yearly\ tabcontent {
+    /* display: flex !important;
+    justify-content: space-between; */
+}
+/* ------------------------------
+section 8
+*/
+.sec-8 {
+    padding: 20px 0;
+    text-align: center;
+}
+.sec-8 h3 {
+    width: 540px;
+}
+.sec-8 .action-link {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+}
+.sec-8 .action-link:hover {
+    color: rgb(64, 93, 224);
+}
+.sec-8 .action-link::after {
+    content: '\f054';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+
+/* ------------------------------
+section 8
+*/
+footer {
+    width: 100%;
+    padding: 20px;
+}
+.upper {
+    display: flex;
+    padding: 2em;
+}
+.footer-logo {
+    width: 100px;
+    height: 25px;
+}
+.footer-menu ul{
+    display: flex;
+    position: absolute;
+}
+.footer-menu ul li {
+    list-style: none;
+    margin-right: 2vw;
+    text-decoration: none;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: .1s linear;
+}
+.footer-menu ul li a:hover {
+    color: var(--blue);
+}
+.social {
+    margin-left: auto;
+    text-align: center;
+}
+.social ul {
+    display: flex;
+}
+.social ul li {
+    list-style: none;
+    margin-right: 1em;
+}
+.social ul li i {
+    font-size: 20px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding-bottom: 5px;
+}
+.social .fa-instagram:hover {
+    color: #c32aa3;
+}
+.social .fa-facebook-square:hover {
+    color: #385596;
+}
+.social .fa-twitter-square:hover {
+    color: #55acee;
+}
+.social .fa-pinterest-square:hover {
+    color: #bd081c;
+}
+.copy ul {
+    display: flex;
+    justify-content: center;
+}
+.copy ul li {
+    list-style: none;
+    margin-right: 1.5em;
+    color: var(--grey);
+    padding: 30px 0;
+}
+.copy ul li a {
+    text-decoration: none;
+    color: var(--grey);
 }
